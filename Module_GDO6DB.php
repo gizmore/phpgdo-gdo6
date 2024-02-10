@@ -8,6 +8,11 @@ use GDO\DB\Database;
 
 final class Module_GDO6DB extends GDO_Module
 {
+    public function onLoadLanguage(): void
+    {
+        $this->loadLanguage('lang/gdo6db');
+    }
+
     public function getConfig(): array
     {
         return [
