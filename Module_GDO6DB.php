@@ -16,7 +16,7 @@ final class Module_GDO6DB extends GDO_Module
     public function getConfig(): array
     {
         return [
-            GDT_Secret::make('gdo6_db_host'),
+            GDT_Secret::make('gdo6_db_host')->initial('localhost'),
             GDT_Secret::make('gdo6_db_name'),
             GDT_Secret::make('gdo6_db_user'),
             GDT_Secret::make('gdo6_db_pass'),

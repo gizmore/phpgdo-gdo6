@@ -11,6 +11,11 @@ use GDO\Form\MethodForm;
 final class Convert extends MethodForm
 {
 
+    public function isTrivial(): bool
+    {
+        return false;
+    }
+
     protected function createForm(GDT_Form $form): void
     {
         $modules = ModuleLoader::instance()->getEnabledModules();
